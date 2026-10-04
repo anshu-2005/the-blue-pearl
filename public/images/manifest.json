@@ -1,0 +1,250 @@
+[
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.21.57 PM (1).jpeg",
+    "dest": "images/hero/hero-banner-1.jpeg",
+    "role": "hero"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.21.57 PM.jpeg",
+    "dest": "images/hero/hero-banner-2.jpeg",
+    "role": "hero"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.21.58 PM (1).jpeg",
+    "dest": "images/categories/category-bangles.jpeg",
+    "role": "category",
+    "category": "bangles"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.21.58 PM (2).jpeg",
+    "dest": "images/categories/category-necklaces.jpeg",
+    "role": "category",
+    "category": "necklaces"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.21.58 PM.jpeg",
+    "dest": "images/categories/category-earrings.jpeg",
+    "role": "category",
+    "category": "earrings"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.21.59 PM (1).jpeg",
+    "dest": "images/categories/category-rings.jpeg",
+    "role": "category",
+    "category": "rings"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.21.59 PM (2).jpeg",
+    "dest": "images/categories/category-bridal.jpeg",
+    "role": "category",
+    "category": "bridal"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.21.59 PM.jpeg",
+    "dest": "images/categories/category-anklets.jpeg",
+    "role": "category",
+    "category": "anklets"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.00 PM (1).jpeg",
+    "dest": "images/categories/category-maangtikka.jpeg",
+    "role": "category",
+    "category": "maangtikka"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.00 PM.jpeg",
+    "dest": "images/products/antique-oxidised-bangle-set.jpeg",
+    "role": "product",
+    "productSlug": "antique-oxidised-bangle-set",
+    "category": "bangles"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.01 PM (1).jpeg",
+    "dest": "images/products/temple-gold-bangle-pair.jpeg",
+    "role": "product",
+    "productSlug": "temple-gold-bangle-pair",
+    "category": "bangles"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.01 PM.jpeg",
+    "dest": "images/products/tribal-silver-cuff-bangle.jpeg",
+    "role": "product",
+    "productSlug": "tribal-silver-cuff-bangle",
+    "category": "bangles"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.02 PM (1).jpeg",
+    "dest": "images/products/filigree-broad-bangle.jpeg",
+    "role": "product",
+    "productSlug": "filigree-broad-bangle",
+    "category": "bangles"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.02 PM (2).jpeg",
+    "dest": "images/products/oxidised-kundan-bangle-set-6.jpeg",
+    "role": "product",
+    "productSlug": "oxidised-kundan-bangle-set-6",
+    "category": "bangles"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.02 PM.jpeg",
+    "dest": "images/products/antique-brass-bangle-pair.jpeg",
+    "role": "product",
+    "productSlug": "antique-brass-bangle-pair",
+    "category": "bangles"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.03 PM (1).jpeg",
+    "dest": "images/products/temple-choker-necklace.jpeg",
+    "role": "product",
+    "productSlug": "temple-choker-necklace",
+    "category": "necklaces"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.03 PM (2).jpeg",
+    "dest": "images/products/layered-oxidised-silver-necklace.jpeg",
+    "role": "product",
+    "productSlug": "layered-oxidised-silver-necklace",
+    "category": "necklaces"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.03 PM.jpeg",
+    "dest": "images/products/kundan-gold-choker.jpeg",
+    "role": "product",
+    "productSlug": "kundan-gold-choker",
+    "category": "necklaces"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.04 PM (1).jpeg",
+    "dest": "images/products/filigree-pendant-chain.jpeg",
+    "role": "product",
+    "productSlug": "filigree-pendant-chain",
+    "category": "necklaces"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.04 PM.jpeg",
+    "dest": "images/products/antique-coin-necklace.jpeg",
+    "role": "product",
+    "productSlug": "antique-coin-necklace",
+    "category": "necklaces"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.05 PM (1).jpeg",
+    "dest": "images/products/temple-lakshmi-necklace.jpeg",
+    "role": "product",
+    "productSlug": "temple-lakshmi-necklace",
+    "category": "necklaces"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.05 PM (2).jpeg",
+    "dest": "images/products/oxidised-jhumka-earrings.jpeg",
+    "role": "product",
+    "productSlug": "oxidised-jhumka-earrings",
+    "category": "earrings"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.05 PM.jpeg",
+    "dest": "images/products/gold-filigree-studs.jpeg",
+    "role": "product",
+    "productSlug": "gold-filigree-studs",
+    "category": "earrings"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.06 PM (1).jpeg",
+    "dest": "images/products/temple-chandelier-earrings.jpeg",
+    "role": "product",
+    "productSlug": "temple-chandelier-earrings",
+    "category": "earrings"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.06 PM (2).jpeg",
+    "dest": "images/products/silver-tassel-earrings.jpeg",
+    "role": "product",
+    "productSlug": "silver-tassel-earrings",
+    "category": "earrings"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.06 PM.jpeg",
+    "dest": "images/products/kundan-drop-earrings.jpeg",
+    "role": "product",
+    "productSlug": "kundan-drop-earrings",
+    "category": "earrings"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.07 PM (1).jpeg",
+    "dest": "images/products/antique-peacock-earrings.jpeg",
+    "role": "product",
+    "productSlug": "antique-peacock-earrings",
+    "category": "earrings"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.07 PM (2).jpeg",
+    "dest": "images/products/oxidised-adjustable-ring.jpeg",
+    "role": "product",
+    "productSlug": "oxidised-adjustable-ring",
+    "category": "rings"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.07 PM.jpeg",
+    "dest": "images/products/gold-filigree-statement-ring.jpeg",
+    "role": "product",
+    "productSlug": "gold-filigree-statement-ring",
+    "category": "rings"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.08 PM (1).jpeg",
+    "dest": "images/products/temple-toe-ring-pair.jpeg",
+    "role": "product",
+    "productSlug": "temple-toe-ring-pair",
+    "category": "rings"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.08 PM (2).jpeg",
+    "dest": "images/products/antique-silver-ring-set.jpeg",
+    "role": "product",
+    "productSlug": "antique-silver-ring-set",
+    "category": "rings"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.08 PM.jpeg",
+    "dest": "images/products/bridal-gold-plated-bangle-set-12.jpeg",
+    "role": "product",
+    "productSlug": "bridal-gold-plated-bangle-set-12",
+    "category": "bridal"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.09 PM (1).jpeg",
+    "dest": "images/products/bridal-necklace-earring-set.jpeg",
+    "role": "product",
+    "productSlug": "bridal-necklace-earring-set",
+    "category": "bridal"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.09 PM.jpeg",
+    "dest": "images/products/bridal-maangtikka-jhumka-combo.jpeg",
+    "role": "product",
+    "productSlug": "bridal-maangtikka-jhumka-combo",
+    "category": "bridal"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.10 PM (1).jpeg",
+    "dest": "images/products/temple-anklet-pair.jpeg",
+    "role": "product",
+    "productSlug": "temple-anklet-pair",
+    "category": "anklets"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.10 PM (2).jpeg",
+    "dest": "images/products/silver-bells-anklet-pair.jpeg",
+    "role": "product",
+    "productSlug": "silver-bells-anklet-pair",
+    "category": "anklets"
+  },
+  {
+    "original": "WhatsApp Image 2026-08-23 at 12.22.10 PM.jpeg",
+    "dest": "images/products/oxidised-maangtikka.jpeg",
+    "role": "product",
+    "productSlug": "oxidised-maangtikka",
+    "category": "maangtikka"
+  }
+]

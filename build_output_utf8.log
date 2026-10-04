@@ -1,0 +1,121 @@
+﻿
+> the-blue-pearl@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.3.3 (Turbopack)
+- Environments: .env.local
+Γ£ô Running next.config.ts took 151ms
+
+node.exe : ΓÜá The 
+"middleware" file convention 
+is deprecated. Please use 
+"proxy" instead.
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo          : 
+    NotSpecified: (ΓÜá The "  
+  middle...proxy" instead.:   
+ String) [], RemoteExcepti    
+on
+    + FullyQualifiedErrorId : 
+    NativeCommandError
+ 
+
+  To migrate automatically, 
+run:
+  npx @next/codemod@canary 
+middleware-to-proxy .
+
+  Learn more: https://nextjs.o
+rg/docs/messages/middleware-to
+-proxy
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed 
+with 2 errors:
+./src/components/home/TrustBad
+ges.tsx:10:98
+Error: Expected ',', got 
+'ident'
+  [90m 8 |[0m ...[32m0% 
+safe checkout via Razorpay 
+ΓÇö Cards, UPI & more. SSL 
+encrypted.'[0m },
+  [90m 9 |[0m ...
+[31m[1m>[0m [90m10 |[0m 
+...[32m'Hassle-free returns 
+within 7 days if you'[0mre 
+not completely 
+delighted.[32m' },[0m
+  [90m   |[0m               
+                              
+ [31m[1m^^[0m
+  [90m11 |[0m ...livery on 
+orders above 
+Γé╣[35m2[0m,[35m999[0m 
+across [33mIndia[0m. 
+[33mExpress[0m options 
+available.[32m' },[0m
+  [90m12 |[0m ...
+  [90m13 |[0m ...
+
+Parsing ecmascript source 
+code failed
+
+Import trace:
+  Server Component:
+    ./src/components/home/Trus
+tBadges.tsx
+    ./src/app/page.tsx
+
+
+./src/app/(static)/return-poli
+cy/page.tsx:16:46
+Error: Expected '</', got 
+'ident'
+  [90m14 |[0m ...           
+           [[32m'Refund 
+Processing'[0m, [32m'Once 
+the returned item is received 
+and ins...[0m
+  [90m15 |[0m ...           
+           [[32m'Shipping 
+for Returns'[0m, [32m'For 
+defective or incorrect items, 
+we wi...[0m
+[31m[1m>[0m [90m16 |[0m 
+...                      
+[[32m'Exchange'[0m, 
+[32m'If you'[0md prefer an 
+exchange over a refund, we 
+are h...
+  [90m   |[0m               
+                              
+  [31m[1m^[0m
+  [90m17 |[0m ...           
+       ].map(([t, b]) => (
+  [90m18 |[0m ...           
+           <section 
+key={t}><h2 
+className=[32m"font-display 
+text-xl font-bold te...[0m
+  [90m19 |[0m ...           
+       ))}
+
+Parsing ecmascript source 
+code failed
+
+
+    at <unknown> (./src/compon
+ents/home/TrustBadges.tsx:10:9
+8)
+    at <unknown> (./src/app/(s
+tatic)/return-policy/page.tsx:
+16:46)
