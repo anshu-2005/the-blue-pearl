@@ -40,4 +40,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-.vercel
+# backups & logs
+.project_backup/
+*.log
+
+# SQLite temporary database files
+*.db-journal
+*.db-shm
+*.db-wal

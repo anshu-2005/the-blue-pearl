@@ -1,120 +1,136 @@
-import { db } from './client'
-import {
-    collection,
-    doc,
-    getDoc,
-    getDocs,
-    query,
-    where,
-    orderBy,
-    limit,
-    addDoc,
-    setDoc,
-    updateDoc,
-    deleteDoc,
-    serverTimestamp,
-    QueryConstraint,
-    DocumentData,
-} from 'firebase/firestore'
+import { DocumentData } from 'firebase/firestore'
+import { ALL_PRODUCTS, CATEGORIES } from '@/lib/data'
 
 // ── Products ──────────────────────────────────────────────────────────────────
 
-export async function getProducts(constraints: QueryConstraint[] = []) {
-    const q = query(collection(db, 'products'), ...constraints)
-    const snap = await getDocs(q)
-    return snap.docs.map(d => ({ id: d.id, ...d.data() }))
+export async function getProducts(constraints: any[] = []) {
+    try {
+        const res = await fetch('/api/products')
+        if (res.ok) {
+            const json = await res.json()
+            if (json.success && json.data) return json.data
+        }
+    } catch {
+        // Fallback to in-memory
+    }
+    return ALL_PRODUCTS
 }
 
 export async function getProductBySlug(slug: string) {
-    const q = query(collection(db, 'products'), where('slug', '==', slug), limit(1))
-    const snap = await getDocs(q)
-    if (snap.empty) return null
-    return { id: snap.docs[0].id, ...snap.docs[0].data() }
+    try {
+        const res = await fetch(`/api/products/${slug}`)
+        if (res.ok) {
+            const json = await res.json()
+            if (json.success && json.data) return json.data
+        }
+    } catch {
+        // Fallback to in-memory
+    }
+    return ALL_PRODUCTS.find(p => p.slug === slug) || null
 }
 
 export async function getProductById(id: string) {
-    const snap = await getDoc(doc(db, 'products', id))
-    if (!snap.exists()) return null
-    return { id: snap.id, ...snap.data() }
+    try {
+        const res = await fetch(`/api/products/${id}`)
+        if (res.ok) {
+            const json = await res.json()
+            if (json.success && json.data) return json.data
+        }
+    } catch {
+        // Fallback to in-memory
+    }
+    return ALL_PRODUCTS.find(p => p.id === id) || null
 }
 
 export async function getFeaturedProducts(count = 8) {
-    return getProducts([
-        where('isFeatured', '==', true),
-        where('isActive', '==', true),
-        orderBy('createdAt', 'desc'),
-        limit(count),
-    ])
+    const products = await getProducts()
+    return products.filter((p: any) => p.featured || p.bestSeller).slice(0, count)
 }
 
 export async function getProductsByCategory(category: string, count = 20) {
-    return getProducts([
-        where('category', '==', category),
-        where('isActive', '==', true),
-        orderBy('createdAt', 'desc'),
-        limit(count),
-    ])
+    const products = await getProducts()
+    return products.filter((p: any) => p.category.toLowerCase() === category.toLowerCase()).slice(0, count)
 }
 
 // ── Orders ────────────────────────────────────────────────────────────────────
 
 export async function getUserOrders(userId: string) {
-    const q = query(
-        collection(db, 'orders'),
-        where('userId', '==', userId),
-        orderBy('createdAt', 'desc')
-    )
-    const snap = await getDocs(q)
-    return snap.docs.map(d => ({ id: d.id, ...d.data() }))
+    try {
+        const res = await fetch(`/api/orders?userId=${encodeURIComponent(userId)}`)
+        if (res.ok) {
+            const json = await res.json()
+            if (json.success && json.data) return json.data
+        }
+    } catch {
+        // Ignore
+    }
+    return []
 }
 
 export async function getOrderById(orderId: string) {
-    const snap = await getDoc(doc(db, 'orders', orderId))
-    if (!snap.exists()) return null
-    return { id: snap.id, ...snap.data() }
+    try {
+        const res = await fetch(`/api/orders/${orderId}`)
+        if (res.ok) {
+            const json = await res.json()
+            if (json.success && json.data) return json.data
+        }
+    } catch {
+        // Ignore
+    }
+    return null
 }
 
 // ── Categories ────────────────────────────────────────────────────────────────
 
 export async function getCategories() {
-    const snap = await getDocs(collection(db, 'categories'))
-    return snap.docs.map(d => ({ id: d.id, ...d.data() }))
+    return CATEGORIES
 }
 
 // ── Coupons ───────────────────────────────────────────────────────────────────
 
 export async function getCouponByCode(code: string) {
-    const q = query(
-        collection(db, 'coupons'),
-        where('code', '==', code.toUpperCase()),
-        where('isActive', '==', true),
-        limit(1)
-    )
-    const snap = await getDocs(q)
-    if (snap.empty) return null
-    return { id: snap.docs[0].id, ...snap.docs[0].data() }
+    try {
+        const res = await fetch(`/api/coupons?code=${encodeURIComponent(code)}`)
+        if (res.ok) {
+            const json = await res.json()
+            if (json.success && json.data) return json.data
+        }
+    } catch {
+        // Ignore
+    }
+    return null
 }
 
 // ── Reviews ───────────────────────────────────────────────────────────────────
 
 export async function getProductReviews(productId: string) {
-    const q = query(
-        collection(db, 'reviews'),
-        where('productId', '==', productId),
-        orderBy('createdAt', 'desc')
-    )
-    const snap = await getDocs(q)
-    return snap.docs.map(d => ({ id: d.id, ...d.data() }))
+    const product = await getProductById(productId)
+    return product?.customerReviews || []
 }
 
 // ── Users ─────────────────────────────────────────────────────────────────────
 
 export async function getUserProfile(uid: string) {
-    const snap = await getDoc(doc(db, 'users', uid))
-    if (!snap.exists()) return null
-    return { uid: snap.id, ...snap.data() }
+    try {
+        const res = await fetch(`/api/users?uid=${encodeURIComponent(uid)}`)
+        if (res.ok) {
+            const json = await res.json()
+            if (json.success && json.data) return json.data
+        }
+    } catch {
+        // Ignore
+    }
+    return null
 }
 
 export async function upsertUserProfile(uid: string, data: DocumentData) {
-    await setDoc(doc(db, 'users', uid), data, { merge: true })
+    try {
+        await fetch('/api/users', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ uid, ...data }),
+        })
+    } catch {
+        // Ignore in offline mode
+    }
 }

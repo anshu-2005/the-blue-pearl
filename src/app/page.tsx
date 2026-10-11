@@ -1,3 +1,5 @@
+import Header from '@/components/layout/Header'
+import Footer from '@/components/layout/Footer'
 import HeroSection from '@/components/home/HeroSection'
 import TrustBadges from '@/components/home/TrustBadges'
 import FeaturedCategories from '@/components/home/FeaturedCategories'
@@ -19,8 +21,10 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      {/* 1. Cinematic Hero Section */}
-      <HeroSection />
+      <Header />
+      <main>
+        {/* 1. Cinematic Hero Section */}
+        <HeroSection />
 
       {/* 2. Luxury Hallmarks & Trust Badges */}
       <TrustBadges />
@@ -48,6 +52,8 @@ export default function HomePage() {
 
       {/* 10. Instagram Social Lookbook */}
       <InstagramGallery />
+      </main>
+      <Footer />
     </>
   )
 }
